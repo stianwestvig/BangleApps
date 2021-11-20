@@ -1,18 +1,5 @@
-Bangle.setLCDPower(1);
-Bangle.setLCDTimeout(0);
-
-Bangle.setLCDMode("doublebuffered");
-
-
-function consoleDebug(message) {
-  console.log(message);
-}
-
 
 var accel = Bangle.getAccel();
-
-
-g.setFontAlign(-1,-1);
 
 
 function draw(){
@@ -28,3 +15,12 @@ function draw(){
   g.drawString(accel,13,11);
 }
 setInterval(draw, 100);
+
+
+(function (back) {
+  const menu = {
+    '': { 'title': 'clock_band' },
+    '< Back': back,
+  };
+  E.showMenu(menu);
+});
