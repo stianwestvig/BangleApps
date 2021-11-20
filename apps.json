@@ -1,4 +1,17 @@
 [
+  { "id": "clock_band",
+  "name": "clock_band",
+  "shortName":"clock_band",
+  "icon": "app.png",
+  "version":"0.01",
+  "description": "lets hope this works",
+  "tags": "",
+  "supports": ["BANGLEJS"],
+  "storage": [
+    {"name":"clockband.app.js","url":"app.js"}
+  ],
+  "sortorder": -20
+  },
   { "id": "clockband",
     "name": "Clock Band",
     "shortName":"Clock Band",
