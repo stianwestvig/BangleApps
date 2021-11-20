@@ -6,9 +6,9 @@
     "version":"0.01",
     "description": "Clock becomes instrument woo",
     "tags": "",
+    "supports": ["BANGLEJS"],
     "storage": [
-      {"name":"clockband.app.js","url":"app.js"},
-      {"name":"clockband.img","url":"app.png","evaluate":true}
+      {"name":"clockband.app.js","url":"app.js"}
     ],
     "sortorder": -30
   },
