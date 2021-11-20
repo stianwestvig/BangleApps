@@ -1,7 +1,7 @@
 
 (function (back) {
 const menu = {
-    '': { 'title': 'Car Crazy' },
+    '': { 'title': 'clock_band' },
     '< Back': back,
     'Reset Highscore': () => {
     E.showPrompt('Reset Highscore?').then((v) => {
