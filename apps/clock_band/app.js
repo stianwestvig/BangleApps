@@ -14,13 +14,17 @@ function draw(){
   g.setFont("6x8",3);
   g.drawString(accel,13,11);
 }
-setInterval(draw, 100);
 
 
-(function (back) {
-  const menu = {
-    '': { 'title': 'clock_band' },
-    '< Back': back,
-  };
-  E.showMenu(menu);
-});
+var mainmenu = {
+  "" : {
+    "title" : "-- block_band --"
+  },
+  "Accel" : {
+    value : setInterval(draw, 100)
+  },
+  "Exit" : function() { E.showMenu(); },
+};
+
+
+E.showMenu(mainmenu);
